@@ -1,12 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pizza Shop - NestJS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NestJS Assignment 3 - Dependency Injection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      background: #f5f7fb;
+      color: #222;
+    }
+    h1 { color: #7c3aed; }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 16px 0;
+      border-radius: 10px;
+    }
+    code {
+      background: #eee;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>NestJS Pizza Shop Assignment</p>
+  <h1>NestJS Assignment 3</h1>
+  <h2>Dependency Injection</h2>
+  <p>Welcome to the NestJS Dependency Injection project.</p>
+
+  <div class="card">
+    <h3>Products Module</h3>
+    <p>View products: <a href="/products">GET /products</a></p>
+    <p>View product by ID: <a href="/products/1">GET /products/1</a></p>
+  </div>
+
+  <div class="card">
+    <h3>Users Module</h3>
+    <p>View users: <a href="/users">GET /users</a></p>
+  </div>
+
+  <div class="card">
+    <h3>Orders Module</h3>
+    <p>Orders use the Users and Products services.</p>
+    <p>POST /orders — create an order using JSON.</p>
+  </div>
+
+  <p>Shared LoggerService demonstrates dependency injection across modules.</p>
 </body>
 </html>
